@@ -22,3 +22,4 @@ spec:
           image: omarinux/my-apachephp:2.0
           ports:
             - containerPort: 80
+          type: LoadBalancer
