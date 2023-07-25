@@ -20,5 +20,8 @@ spec:
         - name: my-apachephp8
           imagePullPolicy: Always
           image: omarinux/my-apachephp:2.0
-          #ports:
-          #  - containerPort: 80
+          ports:
+            - containerport: 80
+              port: 34000
+              targetPort: 80
+          type: LoadBalancer
