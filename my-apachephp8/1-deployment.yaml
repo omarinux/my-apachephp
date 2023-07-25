@@ -22,3 +22,18 @@ spec:
           image: omarinux/my-apachephp:2.0
           #     ports:
                   #- containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-apachephp8
+  namespace: firstapp-argo
+spec:
+  selector:
+    app: my-apachephp8
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 3333
+  type: LoadBalancer
