@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-apachephp8
+  namespace: firstapp-argo
+  labels:
+    app: my-apachephp8
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-apachephp8
+  template:
+    metadata:
+      labels:
+        app: my-apachephp8
+    spec:
+      containers:
+        - name: my-apachephp8
+          imagePullPolicy: Always
+          image: omarinux/my-apachephp:2.0
+          ports:
+            - containerPort: 80
