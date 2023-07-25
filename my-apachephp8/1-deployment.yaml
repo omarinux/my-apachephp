@@ -29,6 +29,8 @@ metadata:
   name: my-apachephp8
   namespace: firstapp-argo
 spec:
+  externalIPs:
+    - 93.41.171.30
   selector:
     app: my-apachephp8
   ports:
