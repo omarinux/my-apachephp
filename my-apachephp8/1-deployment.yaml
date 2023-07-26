@@ -19,7 +19,7 @@ spec:
       containers:
         - name: my-apachephp8
           imagePullPolicy: Always
-          image: omarinux/my-apachephp:2.0
+          image: omarinux/my-apachephp:2.2
           ports:
             - containerPort: 80
 ---
