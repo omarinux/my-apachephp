@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: web01.qofs.cloud
+    - host: web1.qofs.cloud
       http:
         paths:
           - path: /
