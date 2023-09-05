@@ -7,7 +7,7 @@ metadata:
   labels:
     app: my-apachephp8
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: my-apachephp8
